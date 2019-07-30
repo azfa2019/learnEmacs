@@ -49,7 +49,7 @@
 
 (global-hungry-delete-mode)
 
-(require 'smartparens-config)
+;;(require 'smartparens-config)
 ;;(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
 ;;(add-hook 'org-mode-hook 'smartparens-mode)
 (smartparens-global-mode t)
