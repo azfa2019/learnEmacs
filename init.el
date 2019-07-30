@@ -138,6 +138,7 @@
   (concat
    "C:\\Program Files\\nodejs\\" ";"
    (getenv "PATH")
+   )
   )
 
 (defun locate-current-file-in-explorer ()
