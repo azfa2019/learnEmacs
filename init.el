@@ -139,7 +139,7 @@
    "C:\\Program Files\\nodejs\\" ";"
    (getenv "PATH")
   )
-)
+
 (defun locate-current-file-in-explorer ()
   (interactive)
   (cond
@@ -155,4 +155,4 @@
    ;; Use default-directory as last resource
    (t
     (shell-command (concat "start explorer /e,\"" (replace-regexp-in-string "/" "\\\\" default-directory) "\"")))))
-(global-set-key (kbd "<f1> v") 'counsel-describe-variable)
+(global-set-key (kbd "C-x C-a") 'locate-current-file-in-explorer)
