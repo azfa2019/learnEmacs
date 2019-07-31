@@ -3,8 +3,8 @@
 
 (require 'org-install)
 (require 'ob-tangle)
-;;(org-babel-load-file (expand-file-name "initorg.org" user-emacs-directory))
-;;(org-babel-load-file "~/initorg.org")
+(org-babel-load-file (expand-file-name "initorg.org" user-emacs-directory))
+;;(org-babel-load-file "initorg.org")
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
