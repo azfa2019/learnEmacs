@@ -11,7 +11,10 @@
 (global-set-key (kbd "<f1> v") 'counsel-describe-variable)
 (global-set-key (kbd "C-x C-a") 'locate-current-file-in-explorer)
 (global-set-key (kbd "C-c a") 'org-agenda)
-(global-set-key (kbd "C-c p f") 'counsel-git)
+(global-set-key (kbd "C-c p") 'counsel-git)
 
+(global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
+
+(global-set-key (kbd "C-,") 'hippie-expand)
 
 (provide 'init-keybindings)

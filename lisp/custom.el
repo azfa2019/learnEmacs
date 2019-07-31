@@ -47,9 +47,10 @@
 ;; (setq search-default-mode #'char-fold-to-regexp)
 
 ;; example of setting env var named “path”, by appending a new path to existing path
-(setenv "env"
+(setenv "PATH"
   (concat
    "C:\\Program Files\\nodejs\\" ";"
+   "C:\\Program Files\\Git\\cmd\\" ";"
    (getenv "PATH")
    )
   )
