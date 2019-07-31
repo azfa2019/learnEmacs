@@ -28,6 +28,7 @@
 		monokai-theme
 		;; solarized-theme
 		popwin
+		web-mode
 		) "Default packages")
 
  (setq package-selected-packages my/packages)
@@ -63,4 +64,12 @@
 (load-theme 'monokai t)
 (require 'popwin)
 (popwin-mode t)
+
+(setq auto-mode-alist
+      (append
+       '(("\\.js\\'" . js2-mode))
+       '(("\\.html\\'" . web-mode))
+       auto-mode-alist))
+
+
 (provide 'init-packages)
